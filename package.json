@@ -1,6 +1,6 @@
 {
   "name": "deku-modal",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "My shining module",
   "license": "MIT",
   "repository": "ulrikaugustsson/deku-modal",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "prepublish": "babel src/index.js --out-file lib/index.js"
+    "prepublish": "babel ./src/index.js --out-file ./lib"
   },
   "files": [
     "index.js"

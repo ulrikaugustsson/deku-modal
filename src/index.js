@@ -20,4 +20,4 @@ function modal(modalComponent, attributes) {
 	return modalPromise;
 }
 
-export modal;
+export default modal;
