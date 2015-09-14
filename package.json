@@ -1,0 +1,35 @@
+{
+  "name": "deku-modal",
+  "version": "0.0.1",
+  "description": "My shining module",
+  "license": "MIT",
+  "repository": "ulrikaugustsson/deku-modal",
+  "author": {
+    "name": "Ulrik Augustsson",
+    "email": "ulrikaugustsson@gmail.com",
+    "url": "google.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "prepublish": "babel src/index.js --out-file lib/index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "deku": "^0.5.5",
+    "virtual-element": "^1.2.0"
+  },
+  "devDependencies": {
+    "assert-element": "^0.1.0",
+    "babel": "^5.8.23",
+    "component-mock": "0.0.1",
+    "mocha": "^2.2.5"
+  }
+}
