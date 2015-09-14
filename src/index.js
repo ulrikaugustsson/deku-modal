@@ -1,21 +1,13 @@
 import element from 'virtual-element';
 import {render, tree} from 'deku';
 
-const Modal = {
-	render(component) {
-		const {props} = component;
-
-		return (<div class="Modal">{props.children}<div>);
-	}
-};
-
-function modal(childComponent) {
+function modal(modalComponent, attributes) {
 	const modalMountNode = document.createElement('div');
 
 	document.body.appendChild(modalMountNode);
 
 	const modalPromise = new Promise ((resolve, reject) => {
-		const modalTree = tree(<Modal><childComponent accept={resolve} cancel={reject}/></Modal>);
+		const modalTree = tree(<modalComponent accept={resolve} cancel={reject} {...attributes} />);
 		render(modalMountNode, modalTree);
 	});
 
